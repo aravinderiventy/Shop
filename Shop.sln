@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Services.CouponAPI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Web", "Shop.Web\Shop.Web.csproj", "{5EBF6AB4-C281-4832-A2FF-4B84682CCA33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Services.AuthAPI", "Shop.Services.AuthAPI\Shop.Services.AuthAPI.csproj", "{A050D315-396A-4156-BCDF-B5F83C983780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Services.AuthAPI", "Shop.Services.AuthAPI\Shop.Services.AuthAPI.csproj", "{A050D315-396A-4156-BCDF-B5F83C983780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Services.ProductAPI", "Shop.Services.ProductAPI\Shop.Services.ProductAPI.csproj", "{0114CCC7-BEBD-4041-8B36-D9510C7F13AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{A050D315-396A-4156-BCDF-B5F83C983780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A050D315-396A-4156-BCDF-B5F83C983780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A050D315-396A-4156-BCDF-B5F83C983780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0114CCC7-BEBD-4041-8B36-D9510C7F13AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0114CCC7-BEBD-4041-8B36-D9510C7F13AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0114CCC7-BEBD-4041-8B36-D9510C7F13AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0114CCC7-BEBD-4041-8B36-D9510C7F13AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{9543C07C-A2DD-4EEF-8937-A2606EF7D9DD} = {EDF25D6E-36C5-4E52-B019-9837B359E2B4}
 		{5EBF6AB4-C281-4832-A2FF-4B84682CCA33} = {099CB90F-3BEF-4EB7-85DE-6C79DD46C633}
 		{A050D315-396A-4156-BCDF-B5F83C983780} = {EDF25D6E-36C5-4E52-B019-9837B359E2B4}
+		{0114CCC7-BEBD-4041-8B36-D9510C7F13AE} = {EDF25D6E-36C5-4E52-B019-9837B359E2B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D2C6C6A-74B7-4294-A251-DEFD082F4ADA}

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Shop.Services.AuthAPI.Models.Dto;
 using Shop.Services.AuthAPI.Service.IService;
 
@@ -7,12 +8,12 @@ namespace Shop.Services.AuthAPI.Controllers
 {
     [Route("api/auth")]
     [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthApiController : ControllerBase
     {
         private readonly IAuthService _authService;
         protected ResponseDto _responseDto;
 
-        public AuthController(IAuthService authService)
+        public AuthApiController(IAuthService authService)
         {
             _authService = authService;
             _responseDto = new();
@@ -29,8 +30,12 @@ namespace Shop.Services.AuthAPI.Controllers
                 
                 return BadRequest(_responseDto);
             }
+            else
+            {
+                _responseDto.IsSuccess = true;
+            }
 
-            return Ok();
+            return Ok(_responseDto);
         }
 
         [HttpPost("login")]
@@ -45,8 +50,9 @@ namespace Shop.Services.AuthAPI.Controllers
                 return BadRequest(_responseDto);
             }
             _responseDto.IsSuccess = true;
+            _responseDto.Result = loginResponse;
             
-            return Ok(loginResponse);
+            return Ok(_responseDto);
         }
 
         [HttpPost("AssignRole")]
@@ -64,5 +70,6 @@ namespace Shop.Services.AuthAPI.Controllers
 
             return Ok(_responseDto);
         }
+
     }
 }

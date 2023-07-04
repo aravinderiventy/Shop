@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0-preview.4.23260.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +17,10 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\Coupon\CouponCreate.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Dto\" />
   </ItemGroup>
 
 </Project>
